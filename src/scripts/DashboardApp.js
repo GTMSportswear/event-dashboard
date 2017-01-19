@@ -1,12 +1,16 @@
-import { React } from 'react';
-import { ReactDOM } from 'react-dom';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-class DashboardApp extends React.Component {
+class DashboardApp extends Component {
   constructor() {
     super();
   }
 
   render() {
-    return 'Hello';
+    return (<p>
+      'Hello'
+    </p>)
   }
 }
+
+export default DashboardApp;

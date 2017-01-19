@@ -1,6 +1,6 @@
-import { React } from 'react';
-import { ReactDOM } from 'react-dom';
-import { DashboardApp } from './DashboardApp';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import DashboardApp from './DashboardApp';
 
 const container = document.getElementById('main-page-container');
 
