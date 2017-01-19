@@ -18,18 +18,24 @@
     "type": "git",
     "url": "https://github.com/openshift/origin-server"
   },
-
   "engines": {
     "node": ">= 0.6.0",
     "npm": ">= 1.0.0"
   },
-
   "dependencies": {
     "express": "~3.4.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "babel": "^6.5.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "eslint": "^3.13.1",
+    "webpack": "^1.14.0",
+    "webpack-stream": "^3.2.0"
+  },
   "bundleDependencies": [],
-
   "private": true,
   "main": "server.js"
 }
