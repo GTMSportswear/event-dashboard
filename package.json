@@ -1,5 +1,5 @@
 {
-  "name": "Eventing Dashboard App",
+  "name": "eventing-dashboard-app",
   "version": "1.0.0",
   "description": "OpenShift Sample Application",
   "keywords": [
@@ -33,6 +33,8 @@
     "babel-preset-env": "^1.1.8",
     "babel-preset-react": "^6.16.0",
     "eslint": "^3.13.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "webpack": "^1.14.0",
