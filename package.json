@@ -26,8 +26,14 @@
     "express": "~3.4.4"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "autoprefixer": "^6.6.1",
+    "babel": "^6.5.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "eslint": "^3.13.1",
+    "webpack": "^1.14.0",
+    "webpack-stream": "^3.2.0"
   },
   "bundleDependencies": [],
   "private": true,
