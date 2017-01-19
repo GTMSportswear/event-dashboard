@@ -1,5 +1,5 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "Eventing Dashboard App",
   "version": "1.0.0",
   "description": "OpenShift Sample Application",
   "keywords": [
@@ -31,7 +31,10 @@
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.16.0",
     "eslint": "^3.13.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "webpack": "^1.14.0",
     "webpack-stream": "^3.2.0"
   },
