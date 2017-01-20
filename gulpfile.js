@@ -16,8 +16,9 @@ gulp.task('webpack', () => {
 });
 
 gulp.task('watch', () => {
-    
+    gulp.watch('./src/scripts/**/*.js', ['webpack']);
+    gulp.watch('./src/styles/**/*.scss', ['sass']);
 });
 
 
-gulp.task('default', ['sass', 'webpack']);
+gulp.task('default', ['sass', 'webpack', 'watch']);
