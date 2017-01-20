@@ -1,32 +1,27 @@
-const ExtractTextPlugin = require('extract-text-plus-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-plus-webpack-plugin');
+// const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/scripts/main.js',
   output: {
-    path: './dist/',
     filename: 'index.js'
   },
-  plugins: [
-    new ExtractTextPlugin('styles/styles.css'),
-    new CleanWebpackPlugin(['dist'], {
-      verbose: true,
-      dry: false
-    })
-  ],
+  // plugins: [
+  //   new ExtractTextPlugin('styles/styles.css'),
+  //   new CleanWebpackPlugin(['dist'], {
+  //     verbose: true,
+  //     dry: false
+  //   })
+  // ],
   module: {
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
-          presets: ['env', 'react']
+          presets: ['es2015', 'react']
         }
-      },
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css!sass')
       }
     ]
   }
