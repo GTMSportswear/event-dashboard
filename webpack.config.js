@@ -1,8 +1,19 @@
+const ExtractTextPlugin = require('extract-text-plus-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 module.exports = {
   entry: './src/scripts/main.js',
   output: {
-    filename: 'dist/index.js'
+    path: './dist/',
+    filename: 'index.js'
   },
+  plugins: [
+    new ExtractTextPlugin('styles/styles.css'),
+    new CleanWebpackPlugin(['dist'], {
+      verbose: true,
+      dry: false
+    })
+  ],
   module: {
     loaders: [
       {
@@ -12,6 +23,10 @@ module.exports = {
         query: {
           presets: ['env', 'react']
         }
+      },
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('css!sass')
       }
     ]
   }
