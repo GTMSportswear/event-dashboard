@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import DisplayBlock from './DisplayBlock/DisplayBlock';
 
-class DashboardApp extends Component {
+class DashboardApp extends React.Component {
   constructor() {
     super();
     this.state = {
