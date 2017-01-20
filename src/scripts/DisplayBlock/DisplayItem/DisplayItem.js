@@ -12,7 +12,7 @@ class DisplayItem extends React.Component {
 
   render() {
     return (
-      <p>Order Information: {this.props.data.eventDate} {this.props.data.numberOfProductsOrdered}</p>
+      <li>{this.props.data.eventDate.toString()} {this.props.data.numberOfOrdersPlaced}</li>
     );
   }
 }
