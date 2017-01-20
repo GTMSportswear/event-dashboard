@@ -5,13 +5,20 @@ import DisplayBlock from './DisplayBlock/DisplayBlock';
 class DashboardApp extends Component {
   constructor() {
     super();
+    this.state = {
+      displayItems: [{
+        name: 'item'
+      }, {
+        name: 'item2'
+      }]
+    }
   }
 
   render() {
     return (
       <div>
         <h1>Orders Placed</h1>
-        <DisplayBlock />
+        <DisplayBlock data={this.state.displayItems} />
       </div>
     )
   }

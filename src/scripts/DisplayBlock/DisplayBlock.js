@@ -3,20 +3,13 @@ import ReactDOM from 'react-dom';
 import DisplayItem from './DisplayItem/DisplayItem';
 
 class DisplayBlock extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      displayItems: [{
-        name: 'item'
-      }, {
-        name: 'item2'
-      }]
-    }
+  constructor(props) {
+    super(props);
   }
   
   render() {
-    const displayItems = this.state.displayItems.map((item, index) => {
-      return <DisplayItem key={index} />
+    const displayItems = this.props.data.map((item, index) => {
+      return <DisplayItem key={index} data={item} />
     });
     return (
       <div>{displayItems}</div>
