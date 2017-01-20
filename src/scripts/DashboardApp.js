@@ -7,8 +7,10 @@ class DashboardApp extends Component {
     super();
     this.state = {
       displayItems: [{
-        eventDate: 'Today'
+        eventDate: new Date(),
+        numberOfOrdersPlaced: '14'
       }, {
+        eventDate: new Date(new Date().getTime() - 1000 * 60 * 60 * 24),
         numberOfOrdersPlaced: '10'
       }]
     }

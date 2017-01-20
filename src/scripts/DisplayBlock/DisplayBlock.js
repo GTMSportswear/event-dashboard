@@ -12,7 +12,7 @@ class DisplayBlock extends React.Component {
       return <DisplayItem key={index} data={item} />
     });
     return (
-      <div className="display-block">{displayItems}</div>
+      <ul className="display-block">{displayItems}</ul>
     );
   }
 }

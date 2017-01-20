@@ -10,4 +10,8 @@ h1 {
     border-radius: 0.5rem;
     box-shadow: 1px 1px 12px rgba(25, 25, 25, 0.3);
     padding: 1rem;
+
+    li {
+      list-style-type: none;
+    }
 }
