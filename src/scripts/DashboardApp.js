@@ -8,10 +8,19 @@ class DashboardApp extends Component {
     this.state = {
       displayItems: [{
         eventDate: new Date(),
-        numberOfOrdersPlaced: '14'
+        numberOfOrdersPlaced: 14
       }, {
         eventDate: new Date(new Date().getTime() - 1000 * 60 * 60 * 24),
-        numberOfOrdersPlaced: '10'
+        numberOfOrdersPlaced: 112
+      }, {
+        eventDate: new Date(new Date().getTime() - 1000 * 60 * 60 * 24 * 2),
+        numberOfOrdersPlaced: 6
+      }, {
+        eventDate: new Date(new Date().getTime() - 1000 * 60 * 60 * 24 * 3),
+        numberOfOrdersPlaced: 32
+      }, {
+        eventDate: new Date(new Date().getTime() - 1000 * 60 * 60 * 24 * 4),
+        numberOfOrdersPlaced: 68
       }]
     }
   }
@@ -19,8 +28,8 @@ class DashboardApp extends Component {
   render() {
     return (
       <div>
-        <h1>Orders Placed</h1>
-        <DisplayBlock data={this.state.displayItems} />
+        <h1>GTM Dashboard App</h1>
+        <DisplayBlock title="Ordering Trend" data={this.state.displayItems} />
       </div>
     )
   }

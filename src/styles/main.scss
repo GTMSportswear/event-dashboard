@@ -1,17 +1,84 @@
+$blue: rgb(15, 24, 96);
+$green: #7bcc7b;
+$light-grey: #e4e4e4;
+
 h1 {
     padding: 0.5rem;
     background-color: lightgrey;
     border-bottom: 4px solid grey;
+    margin-bottom: 2rem;
+}
+
+.accounting-number {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+.status-bar-container {
+  .status-bar {
+    height: 12px;
+    width: 0;
+    background-color: $green;
+  }
 }
 
 .display-block {
-    margin: 2rem;
-    border: 2px solid lightgrey;
-    border-radius: 0.5rem;
-    box-shadow: 1px 1px 12px rgba(25, 25, 25, 0.3);
-    padding: 1rem;
+  display: block;
+  margin: auto;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 12px rgba(25, 25, 25, 0.3);
+  padding: 0 0 0.25rem;
+  background: linear-gradient($blue, white);
+  width: 80%;
+
+  @media(max-width: 680px) {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    padding: 1rem 0 1rem;
+  }
+
+  ul {
+    padding: 1rem 0 1rem;
+    background-color: white;
+    margin-bottom: 0;
 
     li {
       list-style-type: none;
+      padding: 0 1rem;
+      text-align: center;
+      background-color: white;
+      
+      table {
+        width: 100%;
+
+        td {
+          &.date-display {
+            font-size: 1.2rem;
+            padding: 0.25rem 0;
+            text-align: left;
+            width: 150px;
+          }
+
+          &.accounting-number {
+            width: 60px;
+          }
+        }
+      }
+
+      &:nth-child(odd) {
+        background-color: whitesmoke;
+      }
+
+      > span {
+        padding-right: 2rem;
+      }
     }
+  }
 }
