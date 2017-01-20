@@ -12,7 +12,7 @@ class DisplayItem extends React.Component {
 
   render() {
     return (
-      <p>DisplayItem: {this.props.data.name}</p>
+      <p>Order Information: {this.props.data.eventDate} {this.props.data.numberOfProductsOrdered}</p>
     );
   }
 }

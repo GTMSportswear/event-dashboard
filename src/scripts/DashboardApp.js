@@ -7,9 +7,9 @@ class DashboardApp extends Component {
     super();
     this.state = {
       displayItems: [{
-        name: 'item'
+        eventDate: 'Today'
       }, {
-        name: 'item2'
+        numberOfOrdersPlaced: '10'
       }]
     }
   }
