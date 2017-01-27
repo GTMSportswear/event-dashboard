@@ -1,3 +1,6 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
+#Event Dashboard
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+**Note that this app is still under development and is not yet production-ready.**
+
+The Event Dashboard is a React app built around the idea of displaying a pulse
+of activity happening on a site.
